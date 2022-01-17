@@ -1,0 +1,260 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,800;1,700&family=Dancing+Script:wght@700&family=Montserrat:wght@700&family=Oswald:wght@700&family=Pacifico&family=Playfair+Display:wght@600&family=Poppins:ital@0;1&family=Roboto:wght@400;700;900&family=Source+Sans+Pro:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #FFFFFF; 
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 55px;
+}
+.main-title{
+    font-size: 16px;
+}
+.menu-bar a{
+    text-decoration: none;
+    margin-right: 16px;
+
+}
+.title-container{
+    margin-top:145px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.title-info h1{
+    font-size: 52px;
+    font-weight:900;
+}
+.title-info p{
+    font-size: 16px;
+    font-weight:bold;
+    color: #3A3A3A;
+
+}
+.title-info button{
+    border: 1px solid white;
+    border-radius: 41px;
+    padding: 10px 24px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight:bold;
+    background: #E02C6D;
+    margin-top: 16px;
+}
+.fa-arrow-right{
+    color: #FFFFFF;
+}
+.title-pic{
+    width: 440px;
+    height: 414px;
+    border: 1px solid #e0dedea8;
+    border-radius: 220px;
+}
+.logo{
+    margin-top: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-top: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+/*........... Collection Part............ */
+
+.collection-part{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   border-radius: 5px; 
+}
+.collection-title{
+    font-size: 28px;
+    padding: 20px;
+
+}
+.collection-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    background:#dad7d765;
+}
+.collection{
+    background:#FFFFFF;
+    display: flex;
+    flex-direction: column;
+    Width:329px;
+    height:446px;
+   border-radius: 5px; 
+
+}
+.collection-pic,.collection-info{
+    position: relative;
+    left: 14px;
+    top:17px;
+
+}
+collection-name{
+    font-size: 28px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.collection-info h2{
+    font-size: 24px;   
+}
+.rating .fa-star{
+    color:#FB8200;
+}
+
+.fa-star-half-alt{
+    color:#FB8200;
+
+}
+.rating,.rating-info,p,span{
+    font-family:'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color:#787885
+}
+.see-more{
+   /* position: relative;
+   left: 475px;
+   bottom: -20px; */
+   /* margin-left: 950px; */
+}
+.see-more p, .fa-arrow-right{
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+    font-weight: 900;   
+}
+
+
+/*................... Future product part........... */
+
+
+
+.future-product{
+    display: flex;
+    Width:1057px;
+    justify-content: space-between;
+    /* position: relative; */
+    margin: 100px auto;
+}
+ .product-pic img{
+    width: 404px;
+    height: 270px;
+}
+.title-product h1{
+    color:#0A0826;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.title-product p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 700;
+}
+.product-link{
+    border: 1px solid white;
+    padding: 10px 24px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight:bold;
+    background: #E02C6D;
+    position: relative;
+    top: 16px;
+}
+
+/* ...............footer part................ */
+
+footer{
+    /* width:1400px; */
+    height: 200px;
+    background: #0A0826;
+   
+}
+
+
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 30px;
+    
+}
+
+.footer-info h2{
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.footer-info h3,p{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Manrope', sans-serif;
+    color: #D9DBE1;
+    padding: 5px;
+}
+.footer-info span{
+    font-size: 24px;
+    /* margin-right: 16px; */
+}
+
+/*.............. Responsive for Mobile/small screen device ............*/
+
+@media only screen and (max-width:600px) {
+    nav,.logo,.future-product,.title-container{
+        flex-direction: column;
+        width: 100%;
+     
+       
+        
+    }
+    .collection-container{
+      display: inline-block;
+      /* background-color: #AAAAAA; */
+      width: 100%;
+
+    }
+    
+   
+    
+}
+
+/*.............. Responsive for Medium screen device ............*/
+@media only screen and (min-width:602px) and (max-width:980px) {
+    nav,.logo,.future-product,.title-container{
+        flex-direction: column;
+        width: 100%;
+     
+       
+        
+    }
+    .collection-container{
+
+      grid-template-columns: repeat(2,1fr);
+
+    }
+    
+   
+    
+}
